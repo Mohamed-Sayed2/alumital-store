@@ -20,6 +20,8 @@
     scroll-behavior: smooth;
     background-color: #070d18;
     color: #f7f9ff;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   body {
@@ -32,6 +34,8 @@
     background-attachment: fixed;
     color: #f7f9ff;
     overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
   }
 
   a {

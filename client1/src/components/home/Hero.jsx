@@ -28,7 +28,7 @@ const services = [
 
 export default function HomeHero() {
   return (
-    <section className="relative pt-12 pb-20">
+    <section className="relative pt-12 pb-20 overflow-hidden">
       {/* Background Decorative Glows */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#1264ff]/10 blur-[140px] pointer-events-none rounded-full" />
       <div className="absolute top-1/3 left-1/3 w-[400px] h-[250px] bg-[#f5a300]/5 blur-[120px] pointer-events-none rounded-full" />
