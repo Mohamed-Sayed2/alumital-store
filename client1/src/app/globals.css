@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #070d18;
+    --bg-secondary: #0a1220;
+    --card-glass: #0c1424;
+    --amber-primary: #f5a300;
+    --blue-primary: #1264ff;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    direction: rtl;
+    scroll-behavior: smooth;
+    background-color: #070d18;
+    color: #f7f9ff;
+  }
+
+  body {
+    min-height: 100vh;
+    background-color: #070d18;
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(18, 100, 255, 0.12) 0%, transparent 50%),
+      radial-gradient(circle at 80% 60%, rgba(245, 163, 0, 0.05) 0%, transparent 40%),
+      linear-gradient(180deg, #070d18 0%, #0a1220 100%);
+    background-attachment: fixed;
+    color: #f7f9ff;
+    overflow-x: hidden;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070d18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a263d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f5a300;
+}
+
+/* Hide Next.js dev indicators */
+nextjs-portal,
+[data-next-badge],
+[data-nextjs-toast] {
+  display: none !important;
+}
